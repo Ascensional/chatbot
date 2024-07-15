@@ -112,3 +112,37 @@ body {
         right: 10px;
     }
 }
+.input-group-prepend {
+    margin-right: 10px; /* Adds spacing between the options button and input box */
+}
+
+.options-menu {
+    display: none; /* Initially hidden */
+    position: absolute; /* Positioning for dropdown */
+    bottom: calc(100% + 10px); /* Positioning above the input group */
+    left: 0; /* Positioning aligned with the left edge */
+    width: 100%; /* Full width */
+    background-color: #ffffff; /* White background */
+    border: 1px solid #ced4da; /* Gray border */
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.options-menu.show {
+    display: block; /* Show when toggled */
+}
+
+.message-container {
+    padding: 10px; /* Padding for message container */
+}
+
+.message {
+    background-color: #f2f2f2; /* Background color for messages */
+    border-radius: 8px; /* Rounded corners */
+    padding: 8px; /* Padding for messages */
+    margin-bottom: 8px; /* Margin between messages */
+    max-width: 70%; /* Maximum width for messages */
+    position: relative; /* Positioning for messages */
+}
+
